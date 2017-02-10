@@ -276,7 +276,7 @@ public abstract class RMAbstractSwitch extends RelativeLayout implements
 
         setToggleMargins(heightMeasureSpec);
 
-        setToggleImagePadding();
+//        setToggleImagePadding();
 
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
@@ -343,7 +343,7 @@ public abstract class RMAbstractSwitch extends RelativeLayout implements
         Drawable toggleDrawable = getSwitchCurrentToggleDrawable();
 
         // Create the toggle background drawables
-        Drawable toggleBkgDrawable = getSwitchCurrentToggleBkgDrawable();
+//        Drawable toggleBkgDrawable = getSwitchCurrentToggleBkgDrawable();
 
         // Set the background drawable
         if (mImgBkg.getDrawable() != null) {
@@ -364,7 +364,7 @@ public abstract class RMAbstractSwitch extends RelativeLayout implements
         }
 
         // Set the toggle background
-        if (mImgToggle.getBackground() != null) {
+        /*if (mImgToggle.getBackground() != null) {
             // Create the transition for the background of the toggle
             TransitionDrawable toggleBkgTransitionDrawable =
                                                            new TransitionDrawable(new Drawable[] {
@@ -379,7 +379,7 @@ public abstract class RMAbstractSwitch extends RelativeLayout implements
         } else {
             // No previous background image, just set the new one
             mImgToggle.setImageDrawable(toggleBkgDrawable);
-        }
+        }*/
 
         // Set the toggle image
         if (mImgToggle.getDrawable() != null) {
